@@ -25,6 +25,8 @@ public class Rectangle extends Shape {
 	}
 	
 	public void printInfo() { 
-	
+		Rectangle print = new Rectangle(width,height);
+		System.out.println("Retangle with an id of "+print.getId()+"width of "+width+", height of "+height+" ,area of "+print.CalculateArea()+"and "+"perimeter of "+print.CalculatePerimeter());
+		
 	}
 }

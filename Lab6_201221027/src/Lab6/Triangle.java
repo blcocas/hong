@@ -1,6 +1,6 @@
 package Lab6;
 
-public class Triangle {
+public class Triangle extends Shape {
 
 	double side1;
 	double side2;
@@ -34,7 +34,7 @@ public class Triangle {
 		
 	}
 	
-	public double calculateArea(){
+	public double CalculateArea(){
 		
 		sum = side1 +side2+ side3;
 		
@@ -43,15 +43,17 @@ public class Triangle {
 		return Area;
 	}
 	
-	public double calculatePerimeter(){
+	public double CalculatePerimeter(){
 		
 		Perimeter= side1+ side2+ side3;
 		
 		return Perimeter;
 	}
 	
-	public void printinfo(){
-
+	public void printInfo(){
+		Triangle print = new Triangle(side1,side2,side3);
+		System.out.println("Triangle with an id of "+print.getId()+"sides of "+side1+", "+side2+"and "+side3+", area of "+print.CalculateArea()+"and "+"perimeter of "+print.CalculatePerimeter());
+		
 	}
 	
 }
