@@ -24,7 +24,7 @@ public class Rectangle extends Shape {
 		
 	}
 	
-	public void printinfo() { 
+	public void printInfo() { 
 	
 	}
 }
