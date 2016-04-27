@@ -5,7 +5,7 @@ public class Triangle {
 	double side1;
 	double side2;
 	double side3;
-	double Area, Perimeter;
+	double Area, Perimeter,sum;
 	
 	public Triangle(double side1, double side2, double side3){
 		
@@ -36,10 +36,16 @@ public class Triangle {
 	
 	public double calculateArea(){
 		
+		sum = side1 +side2+ side3;
+		
+		Area =Math.sqrt(sum * (sum-side1) * (sum-side2) * (sum-side3));
+				
 		return Area;
 	}
 	
 	public double calculatePerimeter(){
+		
+		Perimeter= side1+ side2+ side3;
 		
 		return Perimeter;
 	}

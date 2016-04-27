@@ -19,10 +19,14 @@ public class Circle {
 	
 	public double CalculateArea(){
 		
+		Area2 = radius*radius*Math.PI;
+		
 		return Area2;
 	}
 	
 	public double calculatePerimeter(){
+		
+		Perimeter2= 2*Math.PI*radius;
 		
 		return Perimeter2;
 	}
