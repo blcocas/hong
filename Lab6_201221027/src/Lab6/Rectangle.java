@@ -21,7 +21,22 @@ public class Rectangle extends Shape {
 	}
 	
 	public void drawRectangle() {
+		int w = (int)width;
+		int h = (int)height;
 		
+		for(int i=0;i<height;i++){
+			if(i==0 || i == height-1)
+				System.out.println("+");
+			else
+				System.out.println("|");
+			for(int j=1;j<width-1;j++)
+				System.out.print("-");
+			if(i==0 || i == height-1)
+				System.out.println("+");
+			else
+				System.out.println("|");
+		}
+			
 	}
 	
 	public void printInfo() { 
@@ -29,4 +44,6 @@ public class Rectangle extends Shape {
 		System.out.println("Retangle with an id of "+print.getId()+"width of "+width+", height of "+height+" ,area of "+print.CalculateArea()+"and "+"perimeter of "+print.CalculatePerimeter());
 		
 	}
+	
+	
 }
