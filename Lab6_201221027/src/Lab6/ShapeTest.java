@@ -1,24 +1,25 @@
 package Lab6;
 
 public class ShapeTest {
-   Shape [] shapes = new Shape[3];
+   
    public ShapeTest() {
-      
-      
-      shapes [0] = new Rectangle(4,5);
-      shapes [1] = new Triangle(1,2,3);
-      shapes [2] = new Circle(1);
-      shapes [0].setId(1);
-      shapes [1].setId(2);
-      shapes [2].setId(3);
-      
+   }
+   
+   public void start(){
+	   Shape [] shapes = new Shape[3];
+	      shapes [0] = new Rectangle(4,5);
+	      shapes [1] = new Triangle(1,2,3);
+	      shapes [2] = new Circle(1);
+	      shapes [0].setId(1);
+	      shapes [1].setId(2);
+	      shapes [2].setId(3);
+	      processShape(shapes[0]);
+	      processShape(shapes[1]);
+	      processShape(shapes[2]);
    }
    public static void main(String[] args) {
       ShapeTest test = new ShapeTest();
-      test.processShape(test.shapes[0]);
-      test.processShape(test.shapes[1]);
-      test.processShape(test.shapes[2]);
-      
+      test.start();
    }
    
    public void processShape(Shape input_shape) {
