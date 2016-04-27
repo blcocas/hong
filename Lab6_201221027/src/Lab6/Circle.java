@@ -5,7 +5,7 @@ public class Circle extends Shape {
 	double radius, Area2, Perimeter2;
 	
 	public Circle(double radius){
-		
+		this.radius = radius;
 	}
 	
 	public double getRadius(){
@@ -14,7 +14,7 @@ public class Circle extends Shape {
 	}
 	
 	public void setRadius(double radius){
-		
+		this.radius =radius;
 	}
 	
 	public double CalculateArea(){

@@ -7,14 +7,14 @@ public class Triangle extends Shape {
 	double side3;
 	double Area, Perimeter,sum;
 	
-	public Triangle(double side1, double side2, double side3){
-		
+	public Triangle(double input_side1, double input_side2, double input_side3){
+		this.side1 =input_side1;
+		this.side2 =input_side2;
+		this.side3 =input_side3;
 		
 	}
 	
-	public double getSide1(){
-		return side1;
-	}
+	
 	public void SetSide1(double side1){
 		
 	}
